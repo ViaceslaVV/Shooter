@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
     public LayerMask groundLayer;
     public float groundDistance;
+   
     Rigidbody2D rb;
     public bool grounded;
     public float jumpSpeed;

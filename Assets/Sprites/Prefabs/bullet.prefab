@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4657264609503497031}
   - component: {fileID: 2526183862652596377}
   - component: {fileID: 8484395491914740540}
+  - component: {fileID: -7152805274149398387}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.127, y: 4.831, z: 0}
-  m_LocalScale: {x: 0.10433902, y: 0.10433902, z: 0.10433902}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.10433902}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   damage: 1
-  impactEffect: {fileID: 0}
+  impactEffect: {fileID: 5589019802427078576, guid: e10c1e85075b04c45a8dd77980d0e983, type: 3}
   owner: {fileID: 0}
 --- !u!50 &8484395491914740540
 Rigidbody2D:
@@ -129,3 +130,38 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &-7152805274149398387
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7609766829769009462}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0
