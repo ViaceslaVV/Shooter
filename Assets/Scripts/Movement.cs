@@ -11,11 +11,11 @@ public class Movement : MonoBehaviour
     public bool grounded;
     public float jumpSpeed;
     public float moveSpeed;
-    public AudioSource JumpSound;
+   
 
     void Start()
     {
-        JumpSound = GetComponent<AudioSource>();
+        
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
     {
         RaycastHit2D hit =  Physics2D.Raycast(transform.position, Vector2.down, groundDistance, groundLayer);
         grounded = hit.collider != null;
-        print(hit);
+        
         if(Input.GetButtonDown("Jump") && grounded)
         {
             Jump();
@@ -46,7 +46,7 @@ public class Movement : MonoBehaviour
     void Jump()
     {
         rb.velocity = Vector2.up * jumpSpeed;
-        JumpSound.PlayOneShot(JumpSound.clip);
+        
     }
 
 

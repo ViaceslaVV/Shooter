@@ -172,7 +172,6 @@ ScriptedImporter:
     cells:
     - name: PlayerS_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 5
         y: 0
@@ -181,7 +180,6 @@ ScriptedImporter:
       spriteId: 745d50247c9e9e04686eb279a79fb6d5
     - name: PlayerS_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 0
